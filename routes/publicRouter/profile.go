@@ -22,3 +22,12 @@ var ProfileSkillRoutes = []types.PathRouter{
 		RequiresAuth: true,
 	},
 }
+
+var ProfileSkillItemsRoutes = []types.PathRouter{
+	{
+		Path:         "/get-profile-skill-items/",
+		Method:       "GET",
+		Handler:      profile.GetProfileSkillItems,
+		RequiresAuth: true,
+	},
+}

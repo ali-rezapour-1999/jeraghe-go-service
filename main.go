@@ -22,9 +22,9 @@ func main() {
 
 	gormDB := config.ConnectGORM()
 	if gormDB == nil {
-		middleware.LogStartupError(nil, nil, "Cannot start server without PostgreSQL")
+		middleware.LogStartupError(nil, nil, "Cannot start server without PostgresSQL")
 	}
-	middleware.LogStartupInfo(gormDB, "PostgreSQL with GORM is up and running!")
+	middleware.LogStartupInfo(gormDB, "PostgresSQL with GORM is up and running!")
 
 	secret := config.SecretKeyLoader()
 	if secret != "" {

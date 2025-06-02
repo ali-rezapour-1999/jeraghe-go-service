@@ -16,6 +16,7 @@ func GetAllRoutes() []types.PathRouter {
 	//profile
 	allRoutes = append(allRoutes, publicRouter.ProfileRoutes...)
 	allRoutes = append(allRoutes, publicRouter.ProfileSkillRoutes...)
+	allRoutes = append(allRoutes, publicRouter.ProfileSkillItemsRoutes...)
 
 	//idea
 	allRoutes = append(allRoutes, publicRouter.IdeaRoutes...)
